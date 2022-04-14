@@ -1,0 +1,106 @@
+from multiprocessing.sharedctypes import Value
+from optparse import Values
+import time
+print("字典的学习")
+New_dict = {
+    "Me":"傻逼",
+    "You":"大傻逼",
+    "We":"都是大傻逼",
+}
+Old_dict=New_dict
+print(New_dict)
+type(New_dict)
+print("------------------")
+time.sleep(1.5)
+print(New_dict["Me"])
+print(New_dict["We"])
+print(New_dict["You"])
+print("-------------------------")
+time.sleep(1)
+print(New_dict)
+New_dict["They"]="他们都是大傻逼"
+print(New_dict)
+print("“they” in the Nwe_dict :",New_dict["They"])
+print("----------------")
+time.sleep(1)
+print("清除字典")
+New_dict={}
+New_dict = {
+    "He":"大聪明",
+    "She":"大傻逼",
+}
+print(New_dict)
+print(New_dict["He"])
+time.sleep(1)
+New_dict.clear()
+print(New_dict)
+time.sleep(0.5)
+New_dict = {
+    "He":"大聪明",
+    "She":"大傻逼",
+}
+Old_dict=New_dict.copy()
+New_dict["They"]="大大傻逼"
+Old_dict=New_dict.copy()
+print(New_dict,"  ",Old_dict)
+time.sleep(1)
+Old_dict.clear()
+print(New_dict,"  ",Old_dict)
+print("-----------------------------------------------")
+time.sleep(2)
+del New_dict
+del Old_dict
+print("""
+
+
+
+
+
+
+
+
+
+
+""")
+seq=("Name","Age","Grade","Class")
+Student1=dict.fromkeys(seq)
+print(Student1)
+del Student1
+Student1=dict.fromkeys(seq,114)
+Student1["Name"]="田所浩二"
+Student1["Age"]=24
+print("指定详细值",Student1)
+print("-----------------------------------")
+time.sleep(1)
+print("Name:",Student1.get("Name"))
+print("Age:",Student1.get("Age"))
+print("Grade:",Student1.get("Grade"))
+print("Class:",Student1.get("Class"))
+print("""
+
+
+
+
+
+""")
+time.sleep(1)
+print("是否存在“world”?","wolrd" in Student1.keys())
+print("是否存在“Name”?","Name" in Student1.keys())
+A="world" in Student1.keys()
+if A=="True":
+    print("“world” is in Student1")
+else:
+    print("“world” isn't in Student1")
+print("""
+
+
+
+
+
+
+
+
+""")
+time.sleep(1)
+print("学习结束~~")
+time.sleep(1)
