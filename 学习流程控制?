@@ -1,0 +1,124 @@
+import time
+print("课题：流程控制")
+a=10
+time.sleep(1)
+if a==15:
+    print("a=15")
+else:
+    print("a≠15")
+time.sleep(1)
+if a==10:
+    print("a=10")
+else:
+    print("a≠10")
+time.sleep(1)
+print("""
+
+
+
+
+""")
+del a
+成绩=114
+if 成绩>=108:
+    print("呦，高分啊")
+elif 成绩>=96:
+    print("呦，优秀啊")
+elif 成绩>=76:
+    print("啊这，才及格呢")
+elif 成绩<76:
+    print("你就是歌姬吧")
+time.sleep(1)
+
+
+成绩=98
+if 成绩>=96:
+    print("呦，优秀啊")
+elif 成绩>=108:
+    print("呦，高分啊")
+elif 成绩>=76:
+    print("啊这，才及格呢")
+elif 成绩<76:
+    print("你就是歌姬吧")
+
+time.sleep(1)
+成绩=78
+if 成绩>=96:
+    print("呦，优秀啊")
+elif 成绩>=108:
+    print("呦，高分啊")
+elif 成绩>=76:
+    print("啊这，才及格呢")
+elif 成绩<76:
+    print("你就是歌姬吧")
+
+
+time.sleep(1)
+成绩=65
+if 成绩>=96:
+    print("呦，优秀啊")
+elif 成绩>=108:
+    print("呦，高分啊")
+elif 成绩>=76:
+    print("啊这，才及格呢")
+else:
+    print("你就是歌姬吧")
+
+time.sleep(1)
+print("""
+
+
+
+""")
+time.sleep(1)
+print("""
+
+
+
+
+
+
+现在是while循环
+""")
+del 成绩
+a=0
+num=0
+while num<100:
+    print("这是第:",num)  
+    print("这个不重要，但下一个是：",num+1)   
+    time.sleep(0.05)  
+    num=num+1   
+time.sleep(2)
+print("""
+
+
+
+
+
+
+for循环
+""")
+num=0
+for num in [1,2,3,4,5,6,7,8]:
+    print(num)
+time.sleep(1)
+print("""
+""")
+num=0
+for num in (1,2,3,4,5,6,7,8):
+    print(num)
+print("""
+
+wait a few time...
+""")
+time.sleep(2)
+for num in range(100):    #"range"控制重复执行的次数
+    print("这是第",num,"次循环")
+print("""
+
+
+wait a few time....
+""")
+time.sleep(1)
+for num in range(1,11):     #此处输出1-10的数字     tips:后一位是不会输出的,若要强制输出自己要输出的数字,就必须在那个数字+1,且必须是整数
+    print(num)
