@@ -1,0 +1,130 @@
+#这个程序主要是列表的应用
+from hashlib import md5
+from operator import xor
+from re import A
+import time
+print("""这个程序主要是对列表的设立与调取
+通过列表，我们是可以存储信息的
+同时这些信息也是可以调取的""")
+print("""
+                
+                """)
+x1=['这是第一个项','这是第二个项']  #设定，以  ，  隔开每个项，下同
+x2=['这是第三个项','这是第四个项']
+time.sleep(1.5)
+print(x1[0])  #打印第一个项
+print(x1[1])  #打印第二个项
+print("------------------------------------")  #隔开两列表的分隔线
+print(x2[1])  #打印第四个项
+print(x2[0])  #打印第三个项
+print("现在稍等一下")
+time.sleep(2)
+print("现在我们可以试试更多项的列表，及各个数据加上列表的表达")
+x1=['one','two','three','four','five']
+x2=['six','seven','eight','nine','ten']
+print("开始运行，等待3秒")
+time.sleep(1)
+print("3")
+time.sleep(1)
+print("2")
+time.sleep(1)
+print("""1
+开始程序——————""")
+print(x2[-1],' ',x2[-2],' ',x2[-3],' ',x2[-4],' ',x2[0])
+print("---------------")
+print(x1[0],' ',x1[1],' ',x1[2],' ',x1[3],' ',x1[4])
+time.sleep(2)
+print("所以说，其实我们还是可以直接打印列表的，如下")
+print(x1)
+print("---------")
+print(x2)
+time.sleep(2)
+print("仅如此，我们还可以选择一段列表,例如这样：")
+print(x1[0:2],'  这里选择了第一项到第三项')
+print("-----------")
+print(x2[2:4],'这里选择了第三至第四项')
+time.sleep(1.5)
+print("""
+    """)
+print("其实，不仅仅是在列表，别的情况也可以实现")
+time.sleep(1)
+print("先设定一个数为“x3”，x3=123456")
+time.sleep(0.5)
+x3="123456"
+print(x3[2])
+print(x3[3])
+time.sleep(1)
+print("其实这两处是分别选择了第三项、第四项")
+print("也就是3、4")
+time.sleep(2)
+x1=[1,2,3,4,5,6,7,8,9]
+print("列表")
+print(x1)
+print("插入数字'10'")
+time.sleep(1)
+x1.append(10)
+print(x1)
+time.sleep(2)
+x1.extend([11,12])#在列表末尾插入多个数据
+print(x1)
+time.sleep(1)
+print("""
+
+""")
+print("选择位置插入数据")
+x1.insert(0,0)#在第一个位置插入数字“0”
+time.sleep(1)
+print("-------------------------------------------")
+x1.pop(0)
+print("删除第一个项")
+print(x1)
+x1.pop(11)
+print("删除最后一个项")
+print(x1)
+x1.pop(10)
+print("删除最后一个项")
+print(x1)
+time.sleep(1)
+print("---------------")
+x1=[0,1,2,3,4,5,6,7,8,9,10]
+x1.remove(0)
+print("-------------------------------------------")
+time.sleep(1)
+x2=["Iphone","Iwatch","Ipad","ITV"]
+x2.remove("Iphone")
+print(x2)
+print("---------------------------------------")
+time.sleep(1)
+x1=[1,2,3,4,5,6,7,8]
+del x1[0:2]
+print(x1)
+print("---------------------------------------")
+time.sleep(1)
+x2=["Iphone","Iwatch","Ipad","ITV","Itouch"]
+print("Iphone is in:",x2.index("Iphone")+1)
+print("Ipad is in:",x2.index("Ipad")+1)
+print("Iwatch is in:",x2.index("Iwatch")+1)
+print("---------------------------------------------")
+time.sleep(2)
+print("反转列表")
+print("reverse")
+x2.reverse()
+print(x2)
+x2.reverse()
+print("-------------------------------------------")
+time.sleep(1)
+x1=["Iphone","Iwatch","Ipad","ITV","Itouch","Iphone","Iphone"]
+print("“Iphone”出现的次数是:",x1.count("Iphone"))
+print("--------------------------------------------------")
+time.sleep(1)
+x1=[114,514,1919,810]
+x1.sort()
+print(x1)
+print("sort")
+print(x1)
+print("----------------------------------------------")
+time.sleep(1.5)
+x1=(1,2,3,4,5)
+print(x1)
+print(type(x1))
+time.sleep(15)
